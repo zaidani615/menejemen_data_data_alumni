@@ -1,0 +1,216 @@
+/* --- FILE DASHBOARD.CSS GABUNGAN FINAL (KUNING SOLID & JUDUL TENGAH) --- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #959596;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Wrapper Utama */
+.main-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* Label ADMIN & USER - KUNING SOLID (TIDAK TRANSPARAN) */
+.role-label {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    padding: 8px 25px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff !important; /* Teks Hitam Pekat */
+    background: #848588;
+    border-radius: 0 0 8px 8px;
+    z-index: 1000 !important;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    opacity: 1 !important;
+}
+
+.role-label.admin, 
+.role-label.user { 
+    background-color: #868888 !important; 
+    opacity: 1 !important;
+}
+
+header {
+    background: #716e6e;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 25px 50px;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+/* Nav Container - Grid agar Judul di Tengah */
+.nav-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; 
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Judul Tengah */
+.nav-container h2 {
+    color: #edeaea;
+    grid-column: 2;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Logout tetap di kanan */
+.logout {
+    grid-column: 3;
+    justify-self: end;
+    background: #848588;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.logout:hover {
+    background: #e74c3c;
+}
+.hapus:hover {
+    background: #e74c3c;
+}
+.edit:hover {
+    background: #3c42f6;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.card {
+    background: white;
+    width: 100%;
+    max-width: 1100px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(186, 183, 183, 0.1);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.card-header h3 {
+    color: #8f8d8d;
+    font-size: 22px;
+}
+
+/* Area Search & Tambah */
+.header-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.header-actions form {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px 15px;
+    border: 1px solid #919090;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    width: 200px;
+}
+
+.tambah {
+    background: #848588;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.tambah:hover {
+    background: #3131f7;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+th {
+    background: #87888b;
+    color: white;
+    text-align: left;
+    padding: 14px;
+    font-size: 14px;
+}
+
+td {
+    padding: 14px;
+    border-bottom: 1px solid #949292;
+    font-size: 14px;
+    color: #5b5a5a;
+}
+
+tr:nth-child(even) { background: #f9f9f9; }
+tr:hover { background: #d3d5d7; }
+
+.edit, .hapus {
+    padding: 6px 14px;
+    text-decoration: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.edit {
+     background: #8a8d8f;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+     }
+.hapus { 
+    background: #8a8d8f;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+ }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #716e6e;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 14px;
+    margin-top: auto;
+}
